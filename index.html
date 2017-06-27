@@ -8,15 +8,18 @@
     <meta name="description" content="" />
 	<title>视频</title>
 	<meta name=renderer content="webkit">
-
 	<link rel="stylesheet" href="static/css/style.css">
+
+	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
 </head>
 <body>
 	<header>logo</header>
-	<video width="320" height="240" controls>
-		<source src="movie.mp4" type="video/mp4">
-		<source src="movie.ogg" type="video/ogg">
-		您的浏览器不支持Video标签。
-	</video>
+
+	<div ng-app="">
+		<p>姓名：<input type="text" ng-model="name"></p>
+		<h1>你好 {{name}}</h1>
+	</div>
+
+	
 </body>
 </html>
