@@ -6,3 +6,11 @@ header {
 	text-align: center;
 	font-size: 14px;
 }
+.lightBox ul li {
+	float: left;
+	font-style: none;
+	list-style: none;
+}
+.lightBox ul li img {
+	height: 300px;
+}
