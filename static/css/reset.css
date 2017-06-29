@@ -1,0 +1,93 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+	margin: 0;
+	padding: 0;
+	word-break: normal
+}
+body {
+	font-family: "微软雅黑", Verdana, Arial, Helvetica, sans-serif
+}
+h1,h2,h3,h4,h5,h6,p,a,span {
+	text-transform: none !important;
+	word-wrap: break-word;
+	word-break: break-all
+}
+ul,ol {
+	list-style: none outside none
+}
+sup {
+	vertical-align: text-top
+}
+sub {
+	vertical-align: text-bottom
+}
+fieldset,img {
+	border: 0 none
+}
+
+button,input,select,textarea {
+	font-size: 100%
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+	display: block;
+	margin: 0;
+	padding: 0
+}
+a {
+	text-decoration: none
+	color: #337ab7;
+}
+a:acitve {
+	color: inherit
+}
+a:link,a:visited,a:hover,a:active,a:focus {
+	outline: none;
+	text-decoration: none
+}
+h1 em,h2 em,h3 em,h4 em,h5 em,h6 em,p em {
+	font-style: italic
+}
+s,b {
+	font-weight: normal;
+	text-decoration: none
+}
+input:focus,input:active {
+	outline: none
+}
+button {
+	outline: none
+}
+button:active,button:visited {
+	outline: none
+}
+
+
+
+.clearfix {
+	zoom: 1
+}
+.clearfix:before {
+	content: "\200B";
+	display: block;
+	height: 0;
+	visibility: hidden
+}
+.clearfix:after {
+	clear: both;
+	content: "\200B";
+	display: block;
+	height: 0;
+	visibility: hidden
+}
+.fr {
+	float: right
+}
+.fl {
+	float: left;
+}
+
