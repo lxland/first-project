@@ -17,6 +17,10 @@
 		<p>姓名：<input type="text" ng-model="name"></p>
 		<h1>你好 {{name}}</h1>
 	</div>
+
+	<!-- 文件格式和大小判断 -->
+	<input id="files" type="file">
+
 	<div class="lightBox">
 		<ul>
 			<li><img class="lazy" data-original="static/images/1-1.jpg" alt=""></li>
@@ -82,13 +86,6 @@
 	<script src="https://cdn.bootcss.com/angular.js/1.6.4/angular.min.js"></script>
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
-	<script>
-		$(function() {
-
-		    $("img.lazy").lazyload({effect: "fadeIn"});
-
-		});
-
-	</script>
+	<script src="static/js/uploadFile.js"></script>
 </body>
 </html>

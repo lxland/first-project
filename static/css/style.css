@@ -6,6 +6,9 @@ header {
 	text-align: center;
 	font-size: 14px;
 }
+.lightBox {
+	margin-top: 30px;
+}
 .lightBox ul li {
 	float: left;
 	font-style: none;
