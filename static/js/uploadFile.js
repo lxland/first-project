@@ -1,4 +1,5 @@
 $(function(){
+	// 文件上传限制
 	$('#files').change(function(){
 		var _t = $(this);
 		var fileName = _t.val();
@@ -13,6 +14,19 @@ $(function(){
 
 		
 	})
+
+
+	// 表单验证
+	$('#commentForm').validate({
+		rules:{
+			
+		},
+		messages:{
+			
+		}
+	})
+
+
 })
 
 // 图片懒加载
