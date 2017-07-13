@@ -26,8 +26,30 @@ $(function(){
 		}
 	})
 
+	
 
 })
 
 // 图片懒加载
 $("img.lazy").lazyload({effect: "fadeIn"});
+
+
+// 瀑布流
+	$('#lightBoxMain').waterfall({
+	    itemClass: "#lightBoxMain li",
+	    minColCount: 2,
+	    spacingHeight: 10,
+	    resizeable: true,
+	    ajaxCallback: function(success, end) {
+	        var data = {"data": [
+	            { "original": "1-1.jpg" }, { "original": "2-3.jpg" }, { "original": "2-4.jpg" }, { "original": "2-5.jpg" }, { "original": "2-6.jpg" }
+	        ]};
+	        var str = "";
+	        var templ = '<li style="opacity:0;filter:alpha(opacity=0);"><img class="lazy" data-original="static/images/{{original}}" /></li>'
+
+	        for(var i = 0; i < data.data.length; i++) {
+	            str += templ.replace("{{original}}", data.data[i].original);
+	        }
+	        $(str).appendTo($('#lightBoxMain'));
+	    }
+	});
